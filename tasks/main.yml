@@ -1,0 +1,6 @@
+---
+- name: Install picture editing tools 
+  include_tasks: install.yml
+  when:
+    - software is defined
+    - "'imagetools' in software"
